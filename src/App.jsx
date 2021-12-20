@@ -138,7 +138,7 @@ const App = () => {
 
   console.log(error && error.name);
 
-  if (error && error.name === "UnsupportedChainIdError") {
+  if (error && error.name === "t") {
     return (
       <div className="unsupported-network">
         <h2>Please connect to Rinkeby</h2>
