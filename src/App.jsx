@@ -136,8 +136,7 @@ const App = () => {
       });
   }, [address]);
 
-  console.log(error);
-  console.log(error.name);
+  console.log(error && error.name);
 
   if (error && error.name === "UnsupportedChainIdError") {
     return (
