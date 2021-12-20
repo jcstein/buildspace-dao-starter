@@ -139,14 +139,14 @@ const App = () => {
   console.log(error && error.name);
 
   if (
-    (error && error.name === "UnsupportedChainIdError") ||
-    error.name === "t"
+    error &&
+    (error.name === "UnsupportedChainIdError" || error.name === "t")
   ) {
     return (
       <div className="unsupported-network">
         <h2>Please connect to Rinkeby</h2>
         <p>
-          This dApp only works on the Rinkeby network, please switch networks in
+          This dapp only works on the Rinkeby network, please switch networks in
           your connected wallet.
         </p>
         <div className="footer-container" />
