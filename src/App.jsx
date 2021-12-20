@@ -136,6 +136,19 @@ const App = () => {
       });
   }, [address]);
 
+  if (error && error.name === "UnsupportedChainIdError") {
+    return (
+      <div className="unsupported-network">
+        <h2>Please connect to Rinkeby</h2>
+        <p>
+          This dapp only works on the Rinkeby network, please switch networks in
+          your connected wallet.
+        </p>
+        <div className="footer-container" />
+      </div>
+    );
+  }
+
   // this is where the user hasn't connected wallet
   // to your web app, call connectWallet
   if (!address) {
@@ -145,19 +158,6 @@ const App = () => {
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           connect your wallet
         </button>
-        <div className="footer-container" />
-      </div>
-    );
-  }
-
-  if (error && error.name === "UnsupportedChainIdError") {
-    return (
-      <div className="unsupported-network">
-        <h2>Please connect to Rinkeby</h2>
-        <p>
-          This dapp only works on the Rinkeby network, please switch networks in
-          your connected wallet.
-        </p>
         <div className="footer-container" />
       </div>
     );
