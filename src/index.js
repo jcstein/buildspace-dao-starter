@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App.jsx";
+import * as React from "react";
 
 // import ThirdWeb
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";

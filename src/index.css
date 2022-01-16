@@ -1,11 +1,11 @@
 html,
 body {
   margin: 0;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-family: Ubuntu, "Trebuchet MS", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: purple; */
-  background: blue linear-gradient(-30deg, purple, violet) fixed;
+  background: black;
   color: #fff;
   overflow-x: hidden;
 }
@@ -15,11 +15,11 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: rem;
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -41,6 +41,13 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #f00;
+}
+
+.mint-box {
+  max-width: 100%;
+}
+a {
+  color: hotpink;
 }
 
 .landing,
@@ -117,7 +124,7 @@ h1 {
 
 button {
   cursor: pointer;
-  background-color: #000;
+  background-color: green;
   color: #fff;
   border: none;
   font-weight: bold;
@@ -129,11 +136,11 @@ button {
 }
 
 button:hover {
-  background-color: #121212;
+  background-color: darkgreen;
 }
 
 button:focus {
-  background-color: #222;
+  background-color: darkseagreen;
 }
 
 button:disabled {
